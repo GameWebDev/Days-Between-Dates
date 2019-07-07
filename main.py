@@ -8,17 +8,20 @@ def sum(nums):
         output += num
     return output
 
+#retruns true if a given year y is leap, else returns false 
 def isLeap(y):
     if y % 4 == 0:
         return True
     else:
         return False
 
+#Counts the number of leap years until given year y
 def leapUntil(y):
     if isLeap(y):
         return y//4
     else:
         return y//4 + 1
+        
 #converts a date to the number of days passed from 1st Jan 0 to that date
 def dateToDays(d, m, y):
     if(m > 12 or d > 31):
